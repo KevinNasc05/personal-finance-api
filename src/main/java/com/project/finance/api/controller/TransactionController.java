@@ -19,6 +19,7 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import org.springdoc.core.annotations.ParameterObject;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
@@ -86,6 +87,7 @@ public class TransactionController implements GenericController {
             @RequestParam(required = false) LocalDate end,
             @RequestParam(required = false) TransactionType type,
             @RequestParam(required = false) Long categoryId,
+            @ParameterObject
             @PageableDefault(size = 10, sort = "date", direction = Sort.Direction.DESC)
             Pageable pageable) {
         PageResponseDto<TransactionResponseDto> page = transactionQueryService
