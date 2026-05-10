@@ -1,7 +1,6 @@
 package com.project.finance.api.security;
 
 import com.project.finance.api.model.User;
-import com.project.finance.api.model.enums.UserStatus;
 import com.project.finance.api.service.query.UserQueryService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;

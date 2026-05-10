@@ -1,9 +1,7 @@
 package com.project.finance.api.service.command;
 
 import com.project.finance.api.dto.request.TransactionRequestDto;
-import com.project.finance.api.exceptions.BusinessException;
 import com.project.finance.api.exceptions.ConflictException;
-import com.project.finance.api.exceptions.NotFoundException;
 import com.project.finance.api.mappers.TransactionMapper;
 import com.project.finance.api.model.BankAccount;
 import com.project.finance.api.model.Category;
